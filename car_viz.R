@@ -20,9 +20,9 @@ source(file = "hand_functions.R", echo = TRUE)
 sp_out <- sum_special(mtcars_mpg2)
 
 
-# library(esquisse)
+#library(esquisse)
 # 
-# esquisser(data = mtcars_mpg2, viewer = "browser")
+#esquisser(data = mtcars_mpg2, viewer = "browser")
 
 
 
@@ -37,7 +37,7 @@ ggplot(mtcars_mpg2) +
 # the data is adjusted.  What adjustment is needed?
 
 
-ggplot(mtcars_mpg2, aes(x=as.factor(cyl), y=mpg)) + 
+ggplot(mtcars_mpg2, aes(x=cyl, y=mpg)) + 
   geom_boxplot(fill="slateblue", alpha=0.2) + 
   xlab("cyl")
 
